@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Sing Up</title>
+</head>
+
+<body>
+    <div class="container sign-up">
+        <img src="./img/signUp.png" alt="sign Up">
+        <div>
+            <h1 class="title">Create Account</h1>
+            <p class="desc">Go ahead and sign up, let everyone know how awesome you are!</p>
+            <form action="" method="post">
+                <div class="input">
+                    <img class="icon" src="./img/Icon_username.png" alt="Icon Username">
+                    <input type="text" name="userName" id="userName" placeholder="Username">
+                    <span class="test userName">Username must consist of 5 to 15 characters, only letters and numbers are allowed, with no
+                        numbers at the beginning or the end,</span>
+                </div>
+                <div class="input">
+                    <img class="icon" src="./img/Icon_email.png" alt="Icon email">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <span class="test email">Email must be in a valid format</span>
+                </div>
+                <div class="input">
+                    <img class="icon" src="./img/Icon_passwoud.png" alt="Icon Passwoud">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <span class="test password">least 8 characters</span>
+                </div>
+                <div class="input">
+                    <img class="icon" src="./img/Icon_passwoud.png" alt="Icon Passwoud">
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password">
+                    <span class="test confirmPassword">lt must match</span>
+                </div>
+                <input type="submit" class="btn" id="submit" value="Create Account">
+            </form>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

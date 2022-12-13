@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+* {
+    font-family: 'Mulish', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+body{
+    display: flex;
+    height: 100vh;
+    background: url("../img/backgroud.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* start welcome */
+.container {
+    margin: auto;
+    width: 1080px;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    gap: 60px;
+    background: #f5f7ffd9;
+    border-radius: 10px;
+}
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fff5;
+    z-index: -1;
+}
+.title {
+    margin-bottom: 30px;
+    font-size: 56px;
+    text-transform: capitalize;
+    color: #2D2D2D;
+}
+.desc {
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #1F1249;
+}
+.btn {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(113.87deg, #2663DF 14.81%, #758FF0 88.76%);
+    box-shadow: 0px 6px 18px #9CADF2;
+    border: none;
+    border-radius: 10px;
+}
+/* end welcome */
+
+/* start sign-up */
+.sign-up .title {
+    margin-bottom: 20px;
+    font-size: 42px;
+}
+.sign-up .desc {
+    line-height: 160%;
+}
+.sign-up .input {
+    position: relative;
+}
+.sign-up .icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.sign-up input:not([type="submit"]) {
+    margin-bottom: 10px;
+    padding: 8px 20px 8px 61px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    border: 1px solid #DBE3FF;
+    border-radius: 10px;
+    outline: none;
+}
+.sign-up .test {
+    margin: 10px;
+    text-align: left;
+    font-size: 12px;
+    color: #f00;
+    display: none;
+}
+.sign-up .btn {
+    margin-top: 20px;
+    cursor: pointer;
+}
+/* end sign-up */
+
+/* start succeed */
+.succeed .title {
+    font-size: 40px;
+}
+.succeed .desc {
+    font-size: 16px;
+}
+/* end succeed */
+
+/* start mobile */
+@media (max-width: 767px) {
+    .container {
+        margin: 0;
+        padding: 40px 30px;
+        background: transparent;
+        flex-direction: column;
+        text-align: center;
+    }
+    .container::before {
+        background-color: #fff9;
+    }
+    .container > img {
+        width: 315px;
+        max-width: 100%;
+    }
+    .title {
+        margin-bottom: 10px;
+        font-size: 42px;
+    }
+    .desc {
+        font-size: 16px;
+    }
+
+    /* mobile sign-up */
+    .sign-up .title {
+        font-size: 32px;
+    }
+    .sign-up .desc {
+        font-size: 16px;
+    }
+
+    /* mobile succeed */
+    .succeed .title {
+        margin-top: 140px;
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+    .sign-up .btn {
+        margin-bottom: 40px;
+    }
+}
+/* end mobile */
